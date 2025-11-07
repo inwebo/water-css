@@ -1,0 +1,210 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: none;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* endregion Header */
+header {
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    padding: 10px 16px 0;
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-bottom: 1px inset var(--border);
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+
+    background-image: url('logo-large.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 3px;
+    background-size: 45px;
+}
+
+@media (max-width: 1100px) {
+    header {
+        background-position: 95% 3px;
+    }
+}
+
+nav[role='navigation'] ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+nav[role='navigation'] ul li {
+    float: left;
+    position: relative;
+    top: 1px;
+}
+
+nav[role='navigation'] ul li a {
+    display: block;
+    padding: 8px;
+}
+
+nav[role='navigation'] ul li:not(#current) a:hover {
+    background-color: var(--background-alt);
+    border-radius: 0 0 5px 5px;
+}
+
+nav[role='navigation'] ul li#current {
+    background-color: var(--background-body);
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    border-radius: 5px 5px 0 0;
+}
+
+header span#logout, header span#search {
+    color: var(--text-bright);
+    float: right;
+    padding-top: 5px;
+}
+
+header span#search {
+    padding-right: 10px;
+}
+
+header span#logout a {
+    color: indianred;
+    background-color: var(--background);
+    border-radius: 8px;
+    min-width: 1em;
+    display: block;
+}
+
+header span#logout a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+header span#search a:hover {
+    text-decoration: none;
+}
+/* endregion Header */
+
+/* region Breadcrumb */
+nav[aria-label='Breadcrumb'] {
+    position: sticky;
+    top: 45px;
+    background-color: var(--background-body);
+    padding-top: 8px;
+    padding-bottom: 2px;
+    z-index: 0;
+}
+
+nav[aria-label='Breadcrumb'] ol {
+    padding-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav[aria-label='Breadcrumb'] ol li a {
+    padding: 8px;
+}
+
+nav[aria-label='Breadcrumb'] li:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+nav[aria-label='Breadcrumb'] li:last-child {
+    padding-left: 8px;
+}
+/* endregion Breadcrumb */
+
+main[role='main'] {
+    padding: 16px;
+}
+
+/* region Pagination */
+ul[aria-label='pagination'] {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* remove list bullets */
+    padding: 8px;
+}
+
+ul[aria-label='pagination'] li {
+    min-width: 30px;
+    text-align: center;
+    display: block; /* let links fill the list item */
+    padding: 8px 12px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background-color: var(--background-alt);
+}
+
+ul[aria-label='pagination'] li[aria-current='true'] {
+    background-color: var(--background-alt);
+    border-color: var(--focus);
+}
+
+ul[aria-label='pagination'] li:hover:not([aria-current='true']) {
+    background-color: var(--background-alt);
+    border-color: var(--focus);
+}
+
+@media (max-width: 1100px) {
+    ul[aria-label='pagination'] li.hidden-mobile {
+        display: none;
+    }
+}
+
+/* endregion Pagination */
+
+/* region Footer */
+footer {
+    background-color: var(--background);
+    padding: 8px;
+    text-align: center;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-radius: 5px 5px 0 0;
+}
+
+footer span#top {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+}
+
+footer span#top a {
+    position: relative;
+    right: -22px;
+    padding: 18px 8px 8px 8px;
+    background-color: var(--background-alt);
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    border-radius: 5px 5px 0 0;
+}
+/* endregion Footer */
+
+/* region Bookmark */
+.edit {
+    float: right;
+    padding: 8px;
+    margin-top: 12px;
+}
+/* endregion Bookmark */
