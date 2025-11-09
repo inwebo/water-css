@@ -235,3 +235,21 @@ footer span#top a {
     margin-top: 12px;
 }
 /* endregion Bookmark */
+
+/* region boxxed */
+section[data-boxxed] {
+    display: grid;
+    grid: auto-flow dense / 50% 50% 1fr;
+}
+
+section[data-boxxed] > div {
+    padding: 8px;
+}
+
+.boxxed-left {
+    background-color: red;
+}
+.boxxed-right {
+    background-color: yellow;
+}
+/* endregion boxxed */
