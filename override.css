@@ -36,6 +36,7 @@ header img#inwebo-logo {
     border-right: 1px solid var(--border);
     border-left: 1px solid var(--border);
     border-bottom: 1px inset var(--border);
+    border-radius: 0 0 5px 5px;
 }
 
 @media (max-width: 1100px) {
