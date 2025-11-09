@@ -170,11 +170,16 @@ ul[aria-label='pagination'] li {
     text-align: center;
     display: block; /* let links fill the list item */
     padding: 8px 12px;
-    text-decoration: none;
     margin: 0 4px;
     border-radius: 5px;
     border: 1px solid var(--border);
     background-color: var(--background-alt);
+}
+
+ul[aria-label='pagination'] li a {
+    min-width: 100%;
+    min-height: 100%;
+    text-decoration: none;
 }
 
 ul[aria-label='pagination'] li[aria-current='true'] {
