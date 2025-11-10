@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="XaH_oUODGEneM1q_fqWvh5Bjrk8U2pLVLrCi8ettBVQ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <meta name="description" content="Content">
+
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="override.css">
+</head>
+<body id="top-anchor">
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Bookmarks</a></li>
+                <li id="current"><a href="">propos</a></li>
+            </ul>
+        </nav>
+
+        <img id="inwebo-logo" src="logo-large.svg" alt="Inwebo Logo" width="50px" height="50px" title="Inwebo Veritas"/>
+
+        <span id="logout"><a href="/logout">⏻</a></span>
+        <span id="search"><a href="/logout">🔍</a></span>
+    </header>
+
+    <main role="main">
+        <nav aria-label="Breadcrumb">
+            <ol>
+                <li><a href="">Admin</a></li>
+                <li><a href="">Bookmarks</a></li>
+                <li><a href="">Tags</a></li>
+                <li aria-current="page">Current page</li>
+            </ol>
+        </nav>
+        <ul aria-label="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li>---</li>
+            <li aria-current="true">1</li>
+            <li class="hidden-mobile"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">500</a></li>
+            <li>---</li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+        <section data-boxxed>
+            <div class="boxxed-left">
+                <ol>
+                    <li><button href="">Meta</button></li>
+                    <li><button href="">Breadcrumbs</button></li>
+                </ol>
+            </div>
+            <div class="boxxed-right">
+                <h1>Admin bookmarks</h1>
+                <div><button>New</button><button>Edit</button><button>Delete</button></div>
+                <table class="table sortable">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>CreatedAt</th>
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3403</td>
+                        <td>2025-11-08 19:41:42</td>
+                        <td><a href="https://www.youtube.com/watch?v=4kkUNu9idk8" target="_blank" title="6abe414087e0755804d9df67d046883e">Group Home - Livin' Proof - YouTube</a></td>
+                        <td><lite-youtube videoid="4kkUNu9idk8" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3403">show</a>
+                            <a href="/bookmark/3403/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3402</td>
+                        <td>2025-11-07 23:41:27</td>
+                        <td><a href="https://www.vnf.fr/vnf/presses/canal-du-midi-la-secheresse-impose-de-nouvelles-mesures/" target="_blank" title="75d699c9dd2534a0e9bb15038fbc8c1c">Canal du midi : la sécheresse impose de nouvelles mesures - VNF</a></td>
+                        <td>Zut de flûte ! Il n'y a plus d'eau suffisante qui arrive de la montagne noire pour alimenter le canal du midi. De mon point de vue la Garonne se portait bien. Mais non la question maintenant c'est de savoir comment est repartie l'eau. Votre maïs ne m'intéresse pas, mettre de l'eau sur les moissons dans les champs est inutile.</td>
+                        <td>
+                            <a href="/bookmark/3402">show</a>
+                            <a href="/bookmark/3402/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3401</td>
+                        <td>2025-11-07 14:10:14</td>
+                        <td><a href="https://htmltable.com/sortable/" target="_blank" title="06577c8bd5e63dd6905bb5489681a781">Sortable HTML Tables - Order Rows with Header Click</a></td>
+                        <td>Order HTML table rows alphabetical or numerial order, increasing or decreasing order. Click the table header to select a column to sort by. Click a header twice for reverse order.</td>
+                        <td>
+                            <a href="/bookmark/3401">show</a>
+                            <a href="/bookmark/3401/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3400</td>
+                        <td>2025-11-07 11:17:16</td>
+                        <td><a href="https://www.youtube.com/watch?v=RezYC0u3BKE" target="_blank" title="9df6042e19860b3b27b5d204cea91a0f">We Trying to Stay Alive - YouTube</a></td>
+                        <td><lite-youtube videoid="RezYC0u3BKE" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3400">show</a>
+                            <a href="/bookmark/3400/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3399</td>
+                        <td>2025-11-07 10:41:26</td>
+                        <td><a href="https://www.repowidget.com/#examples" target="_blank" title="b921c9d9f53c3a0c651b0aa05082aee1">RepoWidget - Professional GitHub Repository Display Widget</a></td>
+                        <td>A lightweight, customizable widget for showcasing GitHub repositories on any website.</td>
+                        <td>
+                            <a href="/bookmark/3399">show</a>
+                            <a href="/bookmark/3399/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3398</td>
+                        <td>2025-11-07 10:07:41</td>
+                        <td><a href="https://rameerez.com/send-this-article-to-your-friend-who-still-thinks-the-cloud-is-a-good-idea/" target="_blank" title="1fef0b3a9a1c6a1126b24b62f3398128">Send this article to your friend who still thinks the cloud is a good idea</a></td>
+                        <td>Article à charge contre l'informatique dans les nuages du type AWS et consorts.</td>
+                        <td>
+                            <a href="/bookmark/3398">show</a>
+                            <a href="/bookmark/3398/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3397</td>
+                        <td>2025-11-07 08:48:22</td>
+                        <td><a href="https://www.youtube.com/watch?v=h3pTJ_CbN9E" target="_blank" title="1fb3224e0385a8efa25f3fd15943cea1">White Horse (2008 Remaster) - YouTube</a></td>
+                        <td><lite-youtube videoid="h3pTJ_CbN9E" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3397">show</a>
+                            <a href="/bookmark/3397/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3396</td>
+                        <td>2025-11-06 22:38:16</td>
+                        <td><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout#grilles_imbriquées" target="_blank" title="786d43370ce954b32810f2ba1b607987">Les concepts de base des grilles CSS - CSS | MDN</a></td>
+                        <td>Je dois revoir tout cela</td>
+                        <td>
+                            <a href="/bookmark/3396">show</a>
+                            <a href="/bookmark/3396/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3395</td>
+                        <td>2025-11-06 22:37:56</td>
+                        <td><a href="https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pagination/accessibilite-de-la-pagination" target="_blank" title="ab08bb1f551dc90f092452bc816a195f">Accessibilité de la Pagination - Système de Design de l’État</a></td>
+                        <td>Le gouvernement qui fait des choses biens !</td>
+                        <td>
+                            <a href="/bookmark/3395">show</a>
+                            <a href="/bookmark/3395/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3394</td>
+                        <td>2025-11-05 20:40:10</td>
+                        <td><a href="https://www.cs.cmu.edu/~ralf/ralf-home.html" target="_blank" title="b4cf42294897b3340385c7168e066a97">Ralf Brown's Home Page</a></td>
+                        <td>1998 ! C'est de l'archéologie à ce niveau. J'aime beaucoup</td>
+                        <td>
+                            <a href="/bookmark/3394">show</a>
+                            <a href="/bookmark/3394/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3393</td>
+                        <td>2025-11-05 15:05:40</td>
+                        <td><a href="https://www.w3.org/WAI/ARIA/apg/" target="_blank" title="07e3ca7586194640455b6cb8cd63d131">ARIA Authoring Practices Guide | APG | WAI | W3C</a></td>
+                        <td>à implémenter systématiquement cela ne demande pas beaucoup d'effort et participe à avoir un web plus ouvert.</td>
+                        <td>
+                            <a href="/bookmark/3393">show</a>
+                            <a href="/bookmark/3393/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3392</td>
+                        <td>2025-11-05 09:03:34</td>
+                        <td><a href="https://scenestream.net/demovibes/" target="_blank" title="d3cc4da370bd7f7f456c981fdf4676f0">Welcome - Nectarine</a></td>
+                        <td>Music des demoscenes</td>
+                        <td>
+                            <a href="/bookmark/3392">show</a>
+                            <a href="/bookmark/3392/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3391</td>
+                        <td>2025-11-05 09:03:13</td>
+                        <td><a href="https://www.slsknet.org/news/" target="_blank" title="570bb08d14af10af9383b0dbdec9e374">Soulseek</a></td>
+                        <td>Je l'avais oublié celui ci et il semblerait qu'il soit toujours actif</td>
+                        <td>
+                            <a href="/bookmark/3391">show</a>
+                            <a href="/bookmark/3391/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3390</td>
+                        <td>2025-11-04 23:07:36</td>
+                        <td><a href="https://astalavista.box.sk/search/" target="_blank" title="60ee10266dda3b28fcd2ac24561ef3d0">YaCy 'agent-gopurik-ufe-10': Search Page</a></td>
+                        <td>Vraiment ? astalavista.box.sk est toujours en ligne depuis 1998 ? Des bons souvenirs !</td>
+                        <td>
+                            <a href="/bookmark/3390">show</a>
+                            <a href="/bookmark/3390/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3389</td>
+                        <td>2025-11-04 23:04:26</td>
+                        <td><a href="https://keygenmusic.tk/#" target="_blank" title="1af89d7c0216a7d38b9f61b5641a2598">keygenmusic.tk - tracker music player</a></td>
+                        <td>oh putain, les sons des keygens étaient fantastiques. Merci moi pour cette nostalgie</td>
+                        <td>
+                            <a href="/bookmark/3389">show</a>
+                            <a href="/bookmark/3389/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3388</td>
+                        <td>2025-11-04 20:30:54</td>
+                        <td><a href="https://blog.flozz.fr/2025/11/02/quel-format-audio-choisir-pour-son-cloud-musical/" target="_blank" title="2ac608d6f07b1e78d2ff2469569f2a66">Quel format audio choisir pour son cloud musical ? • FLOZzʼ Blog</a></td>
+                        <td>Comparatif des formats audios</td>
+                        <td>
+                            <a href="/bookmark/3388">show</a>
+                            <a href="/bookmark/3388/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3387</td>
+                        <td>2025-11-04 20:30:39</td>
+                        <td><a href="https://lukhash.bandcamp.com/track/walkman-2" target="_blank" title="4503768465dc840cc10edb5e520dd051">WALKMAN | LukHash</a></td>
+                        <td></td>
+                        <td>
+                            <a href="/bookmark/3387">show</a>
+                            <a href="/bookmark/3387/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3386</td>
+                        <td>2025-11-04 10:38:48</td>
+                        <td><a href="https://www.jschristophe.fr/cache-l2-doctrine-en-2025-accelerez-votre-symfony-7-🚀/#:~:text=NONSTRICT_READ_WRITE" target="_blank" title="484ed83a54f7d3f949d4c38ae09ace85">Cache L2 Doctrine en 2025 : Accélérez votre Symfony 7 ! 🚀</a></td>
+                        <td>Gestion du cache avec doctrine</td>
+                        <td>
+                            <a href="/bookmark/3386">show</a>
+                            <a href="/bookmark/3386/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3385</td>
+                        <td>2025-11-04 10:38:02</td>
+                        <td><a href="https://notmysock.org/blog/php/user-cache-timebomb.html" target="_blank" title="5e8ca64d6b092eb9930855e27e007275">not my sock : php/user-cache-timebomb.html</a></td>
+                        <td><cite>APC user cache is cool. It provides an easy way to cache data, in the convenient form of hashes &amp; more hashes within them, to share the data across processes. But it does lend itself to some abuses of shared memory which will leave your pager batteries dead, disk full of cores and your users unhappy. Eventually, the blame trickles down to splatter onto APC land. Maybe people using it didn't quite understand how the system works - but this blog entry is me washing my hands clean of this particular eff-up.</cite></td>
+                        <td>
+                            <a href="/bookmark/3385">show</a>
+                            <a href="/bookmark/3385/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3384</td>
+                        <td>2025-11-04 08:58:07</td>
+                        <td><a href="https://www.youtube.com/watch?v=gmDfDCP6JuQ" target="_blank" title="62e1a63e533773a271910676ee216c0f">De La Soul - Oooh (Official Music Video) [HD] ft. Redman - YouTube</a></td>
+                        <td><lite-youtube videoid="gmDfDCP6JuQ" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3384">show</a>
+                            <a href="/bookmark/3384/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3383</td>
+                        <td>2025-11-02 17:05:35</td>
+                        <td><a href="https://libraryofbabel.info/" target="_blank" title="c577df8447789d8de17620ee274c6101">Library of Babel</a></td>
+                        <td>J'avais oublié ce site, c'est magique ! Tous les livres de l'univers avec l'alphabet EN.</td>
+                        <td>
+                            <a href="/bookmark/3383">show</a>
+                            <a href="/bookmark/3383/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3382</td>
+                        <td>2025-11-02 12:03:24</td>
+                        <td><a href="https://www.youtube.com/watch?v=D8qqtUE_5M0" target="_blank" title="3eca5f0ee42c1be8cc1bfb3fbcc024fa">Je ne pensais jamais pouvoir faire cette vidéo - Clément Viktorovitch - YouTube</a></td>
+                        <td><lite-youtube videoid="D8qqtUE_5M0" autoload="" title="Play: Video"></lite-youtube>
+
+                            Je n’appréciais peu cette femme depuis le début mais ces aveux sont écœurants. C'est franchement à vomir.</td>
+                        <td>
+                            <a href="/bookmark/3382">show</a>
+                            <a href="/bookmark/3382/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3381</td>
+                        <td>2025-11-02 08:15:25</td>
+                        <td><a href="https://90s.myretrotvs.com/#" target="_blank" title="52ece8e203a0377974c2321195b51942">My 90's TV!</a></td>
+                        <td>Excellent ! La télé du passé</td>
+                        <td>
+                            <a href="/bookmark/3381">show</a>
+                            <a href="/bookmark/3381/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3380</td>
+                        <td>2025-11-02 08:15:05</td>
+                        <td><a href="https://www.youtube.com/watch?v=eSnliAbAbCo" target="_blank" title="9a8762c4e8973ba7c5f10303bdd7980d">🔳 Hippocampe Fou - Underground [Baco Session] - YouTube</a></td>
+                        <td><lite-youtube videoid="eSnliAbAbCo" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3380">show</a>
+                            <a href="/bookmark/3380/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3379</td>
+                        <td>2025-10-31 16:35:19</td>
+                        <td><a href="https://www.uacontrolmap.com/map-viewer/" target="_blank" title="5b800a5698c86bf65caf0634adff4c58">UAControlMap Data Viewer</a></td>
+                        <td>Très intéressant pour suivre le conflit en Ukraine</td>
+                        <td>
+                            <a href="/bookmark/3379">show</a>
+                            <a href="/bookmark/3379/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3378</td>
+                        <td>2025-10-31 10:36:56</td>
+                        <td><a href="https://www.youtube.com/watch?v=-t-5UgYIcnI" target="_blank" title="eeb191b204b87d4236fc1be9c4c1012b">Ieva's Polka (Ievan Polkka) - YouTube</a></td>
+                        <td><lite-youtube videoid="-t-5UgYIcnI" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3378">show</a>
+                            <a href="/bookmark/3378/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3377</td>
+                        <td>2025-10-31 10:36:44</td>
+                        <td><a href="https://www.youtube.com/watch?v=uvO2sgfgEhk" target="_blank" title="8450d5718c4627b5ead87954fa49fdc1">2024.08.09 ハク。の日 かむかもチャレンジ- MONO NO AWARE " かむかもしかもにどもかも！ feat.あい（ハク。）" - - YouTube</a></td>
+                        <td><lite-youtube videoid="uvO2sgfgEhk" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3377">show</a>
+                            <a href="/bookmark/3377/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3376</td>
+                        <td>2025-10-31 10:36:35</td>
+                        <td><a href="https://www.youtube.com/watch?v=LHOE4qDY3sQ&amp;t=119s" target="_blank" title="cdf9369213eeb160b74330eb518e6bda">MONO NO AWARE "風の向きが変わって" (OFFICIAL MUSIC VIDEO) - YouTube</a></td>
+                        <td><lite-youtube videoid="LHOE4qDY3sQ" autoload="" title="Play: Video"></lite-youtube></td>
+                        <td>
+                            <a href="/bookmark/3376">show</a>
+                            <a href="/bookmark/3376/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3375</td>
+                        <td>2025-10-31 10:36:17</td>
+                        <td><a href="https://old.reddit.com/r/obscuremusicthatslaps/comments/1oejg9m/next_level_guitar_skills/" target="_blank" title="ad0ef45c41cbe2b27faf77013287efdc">Next level guitar skills : obscuremusicthatslaps</a></td>
+                        <td>Il a du talent ce jeune guitariste !</td>
+                        <td>
+                            <a href="/bookmark/3375">show</a>
+                            <a href="/bookmark/3375/edit">edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3374</td>
+                        <td>2025-10-30 20:18:12</td>
+                        <td><a href="https://www.youtube.com/watch?v=J76S5q_ETfo" target="_blank" title="794a19ef7c06e11026d072484ea79a8e">【ハク。Cover企画】MONO NO AWARE "かむかもしかもにどもかも！" - YouTube</a></td>
+                        <td><lite-youtube videoid="J76S5q_ETfo" autoload="" title="Play: Video"></lite-youtube>
+
+                            MAIS c'est trop bien et j'aime beaucoup les paroles (je n'y comprends rien)</td>
+                        <td>
+                            <a href="/bookmark/3374">show</a>
+                            <a href="/bookmark/3374/edit">edit</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <span id="top"><a href="#top-anchor">^</a></span>
+        CGU - Inwebo Veritas - Julien Hannotin
+    </footer>
+</body>
+</html>
